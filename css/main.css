@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     font-family: "Josefin Slab", serif;
 }
 
@@ -119,3 +119,22 @@ img {
 }
 
 /*  Home Section End */
+
+
+/* Order Section Start */
+
+.order-btn{
+    cursor: pointer;
+    transition: 1s;
+    background: transparent;
+    color: #e53937;
+    border:  2px solid #e53937;
+    
+}
+.order-btn:hover {
+    background: #e53937;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Order Section End */
