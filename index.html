@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Food Website</title>
+  <title>Fresh Food</title>
 
   <!-- Bootstrap Cdn link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,95 +33,98 @@
 <body>
 
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-sm" id="navbar">
-    <a href="index.html" class="navbar-brand" id="logo"><img src="/img/logo.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <div class="container-fluid mx-lg-5 mx-sm-0">
+      <img src="/img/logo.png " class="img-fluid " alt="">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <span><i class="fa-solid fa-bars"></i></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto ">
-        <li class="nav-item ">
-          <a href="#" class="nav-link fs-4 ">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link fs-4">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link fs-4">Order</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link fs-4">Reviews</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link fs-4">Contact</a>
-        </li>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto bg-light">
+          <li class="nav-item ">
+            <a href="/index.html" class="nav-link fs-4 ">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/lang/en/menu.html" class="nav-link fs-4">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/lang/en/services.html" class="nav-link fs-4">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/lang/en/reviews.html" class="nav-link fs-4">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/lang/en/about.html" class="nav-link fs-4">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/lang/en/contact.html" class="nav-link fs-4">Contact</a>
+          </li>
 
-      </ul>
-
-      <form class="d-flex">
-
-
-        <input type="text" class="form-control me-2" placeholder="Search" required>
-        <button type="button" id="btn">Search</button>
-      </form>
-
-
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 fs-5 text-transition" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger fs-5 text-transition" type="button">Search</button>
+        </form>
+      </div>
     </div>
   </nav>
   <!-- Navbar End -->
 
 
+  <div style="margin-top: 8%;"></div>
 
-  <!-- Home Section Start -->
+  <!-- Home Start -->
+  <div class="container text-transition">
+    <div class="row align-items-center ">
+      <div class="col-md-6 ">
+        <h3 class="fs-1 fw-bolder">Claim Best Offer <br>On Fast <span class="text-danger"> Food</span> &
+          <span class="text-danger">Resturant</span>
+        </h3>
+        <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia labore ipsa laudantium ipsam
+          totam nobis </p>
 
-
-  <section class="home" id="home">
-
-
-
-    <div class="home-content">
-
-      <h3>Claim Best Offer <br>On Fast <span>Food</span> & <span>Resturant</span></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia labore ipsa laudantium ipsam totam nobis?
-      </p>
-      <a href="#our-menu" id="home-btn">Our Menu</a>
+        <a href="#our-menu" class="btn btn-outline-danger fs-5">Our Menu</a>
+      </div>
+      <div class="col-md-6">
+        <img src="/img/image-46.png" class="img-fluid" alt="">
+      </div>
 
     </div>
-    <div class="img">
-      <img src="/img/image-46.png" alt="">
-    </div>
 
-  </section>
+  </div>
 
-  <!-- Home Section End -->
+  <!-- Home  End -->
+
+  <div style="margin-top: 11%;"></div>
 
   <!-- Top Section Start -->
-  <div class="container top-section text-center ">
-    <h3 class="text-capitalize text-danger fw-bolder">what we serve</h3>
-    <h3 class="text-capitalize fw-bolder">your favourite food <br>Delivery Partner </h3>
+  <div class="container text-center">
+    <h3 class="text-capitalize text-danger fw-bolder fs-2">what we serve</h3>
+    <h3 class="text-capitalize fw-bolder fs-1">your favourite food <br>Delivery Partner </h3>
 
-    <div class="row align-items-center text-center">
+    <div class="row align-items-center text-center mt-5">
 
-      <div class="col-md-4 py-3 py-md-0">
+      <div class="col-md-4 py-3">
         <div class="card border-0">
           <img class="w-75 m-auto" src="/img/img1.png" alt="">
-          <h1 class="text-capitalize"> easy to order</h1>
-          <p>you only need a few steps in <br>ordering food</p>
+          <h1 class="text-capitalize mt-5"> easy to order</h1>
+          <p class="fs-4">you only need a few steps in <br>ordering food</p>
         </div>
       </div>
-      <div class="col-md-4 py-3 py-md-0">
+      <div class="col-md-4 py-3">
         <div class="card border-0">
           <img class="w-75 m-auto" src="/img/img2.png" alt="">
-          <h1 class="text-capitalize"> Fastest Delivery</h1>
-          <p>delivery that is always ontime <br>even faster </p>
+          <h1 class="text-capitalize mt-5"> Fastest Delivery</h1>
+          <p class="fs-4">delivery that is always ontime <br>even faster </p>
         </div>
       </div>
-      <div class="col-md-4 py-3 py-md-0">
+      <div class="col-md-4 py-3">
         <div class="card border-0">
           <img class="w-75 m-auto" src="/img/img3.png" alt="">
-          <h1 class="text-capitalize"> best quality</h1>
-          <p> not only fast for us quality is also <br>number one</p>
+          <h1 class="text-capitalize mt-5"> best quality</h1>
+          <p class="fs-4"> not only fast for us quality is also <br>number one</p>
         </div>
       </div>
 
@@ -129,23 +132,24 @@
   </div>
 
   <!-- Top Section End -->
+  <div style="margin-top: 11%;"></div>
 
 
   <!-- Our Menu Start -->
 
-  <div class="container my-4 text-center">
-    <h3 class="text-danger fs-2">Menu</h3>
-    <h2>Delicious Dishes Is Here <i class="text-danger fa-solid fa-arrow-down"></i></h2>
+  <div class="container text-center" id="our-menu">
+    <h3 class="text-danger fs-1">Menu</h3>
+    <h2 class="fw-bolder">Delicious Dishes Is Here <i class="text-danger fa-solid fa-arrow-down"></i></h2>
     <!-- Section 1 -->
 
-    <div class="row mt-4">
-      <div class="col-md-3 py-3 py-md-0">
+    <div class="row mt-5">
+      <div class="col-md-3 py-3">
         <div class="card  text-center">
           <img src="/img/Mangalorean_Chicken.png" alt="">
-          <h3 class="text-danger">M Chicken</h3>
-          <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+          <h3 class="text-danger mt-2">M Chicken</h3>
+          <div class="card-body py-0  text-start">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -153,18 +157,18 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$20 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$20 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3 ">
         <div class="card  text-center">
           <img src="/img/Garlic_Fried.png" alt="">
-          <h3 class="text-danger">Garlic Fried</h3>
+          <h3 class="text-danger mt-2">Garlic Fried</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -172,18 +176,18 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$35 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$35 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3 ">
         <div class="card  text-center">
           <img src="/img/Grilled_beef_steak.png" alt="">
-          <h3 class="text-danger">Grilled Steak</h3>
+          <h3 class="text-danger mt-2">Grilled Steak</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -191,18 +195,18 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3">
         <div class="card  text-center">
           <img src="/img/Pineapple_Fried_Rice.png" alt="">
-          <h3 class="text-danger">Fried Rice</h3>
+          <h3 class="text-danger mt-2">Fried Rice</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -210,7 +214,7 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$25 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
+            <p class="fs-4 mt-2">$25 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
           </div>
 
         </div>
@@ -218,14 +222,14 @@
       </div>
     </div>
     <!-- Section 2 -->
-    <div class="row mt-4">
-      <div class="col-md-3 py-3 py-md-0">
+    <div class="row mt-5">
+      <div class="col-md-3 py-0">
         <div class="card  text-center">
           <img src="/img/Grilled_pork_ribs.png" alt="">
-          <h3 class="text-danger">Pork Ribs</h3>
+          <h3 class="text-danger mt-2">Pork Ribs</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -233,18 +237,18 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$200 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$200 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-0">
         <div class="card  text-center">
           <img src="/img/crispy_fried.png" alt="">
-          <h3 class="text-danger"> Crispy Fried</h3>
+          <h3 class="text-danger mt-2"> Crispy Fried</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -252,18 +256,18 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$15 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$15 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-0">
         <div class="card  text-center">
-          <img src="/img/sushi.jpg" class="" alt="">
-          <h3 class="text-danger">Sushi Japanes</h3>
+          <img src="/img/sushi__japanese.png" class="" alt="">
+          <h3 class="text-danger mt-2">Sushi Japanes</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -271,18 +275,18 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
-        <div class="card  text-center">
+      <div class="col-md-3 py-0">
+        <div class="card text-center">
           <img src="/img/Lyulya_kebab.png" alt="">
-          <h3 class="text-danger">Lyulya Kebab</h3>
+          <h3 class="text-danger mt-2">Lyulya Kebab</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -290,7 +294,7 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$250 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
+            <p class="fs-4 mt-2">$250 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
           </div>
 
         </div>
@@ -301,64 +305,65 @@
   <!-- Our Menu End -->
 
 
+  <div style="margin-top: 5%;"></div>
   <!-- Divider -->
-
-  <div class="container my-5">
+  <div class="container">
     <div class="bg-danger" style="width: 100%;height: 2px;"> </div>
   </div>
-
+  <!-- Divider -->
+  <div style="margin-top: 5%;"></div>
 
   <!-- Our Menu Start -->
 
   <div class="container my-5 text-center">
-    <h3 class="text-danger fs-2">Menu</h3>
+    <h3 class="text-danger fs-2">Our Menu</h3>
     <!-- Section 1 -->
-    <div class="row mt-4">
-      <div class="col-md-3 py-3 py-md-0">
+    <div class="row mt-5">
+      <div class="col-md-3 py-3">
         <div class="card  text-center">
           <img src="/img/burger.png" alt="">
-          <h3 class="text-danger">Burger</h3>
-          <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+          <h3 class="text-danger mt-2">Burger</h3>
+          <div class="card-body pb-0 text-start">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked text-secondary"></i>
+              <i class="fa-solid fa-star checked text-secondary"></i>
             </div>
-            <p>$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3 ">
         <div class="card  text-center">
           <img src="/img/fasr food.png" alt="">
-          <h3 class="text-danger">Fast Food</h3>
+          <h3 class="text-danger mt-2">Fast Food</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
-              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked text-secondary"></i>
             </div>
-            <p>$50 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2"> $50 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3">
         <div class="card  text-center">
           <img src="/img/rice.png" alt="">
-          <h3 class="text-danger">Rice Dishe</h3>
+          <h3 class="text-danger mt-2">Rice Dishe</h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -366,18 +371,18 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$120 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+            <p class="fs-4 mt-2">$120 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
           </div>
 
         </div>
       </div>
-      <div class="col-md-3 py-3 py-md-0">
+      <div class="col-md-3 py-3">
         <div class="card  text-center">
           <img src="/img/pizza.png" alt="">
-          <h3 class="text-danger">Pizza </h3>
+          <h3 class="text-danger mt-2">Pizza </h3>
           <div class="card-body py-0 text-start">
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <div class="text-warning fs-5">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <div class="text-warning fs-5 mt-2">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -385,7 +390,7 @@
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
             </div>
-            <p>$30 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
+            <p class="fs-4 mt-2">$30 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
           </div>
 
         </div>
@@ -393,58 +398,8 @@
       </div>
     </div>
   </div>
-
   <!-- Our Menu End -->
-
-
-  <!-- Order Section Start -->
-  <div class="container my-5 ">
-    <div >
-      <div class="fw-bolder fs-2 text-center">
-        Order Your <span class="text-danger"> Food</span>
-      </div>
-      <div class="row">
-
-        <div class="col-md-5 py-3 py-md-0">
-          <div class="card">
-            <img src="/img/img1.png" alt="">
-          </div>
-        </div>
-
-        <div class="col-md-7 py-3 py-md-0">
-          <form action="#">
-
-            <div class="mb-3 mt-3">
-              <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
-            </div>
-
-            <div class="mb-3 mt-3">
-              <input type="email" class="form-control" id="email" placeholder="Enter Eamil" required>
-            </div>
-
-            <div class="mb-3 mt-3">
-              <input type="number" class="form-control" id="number" placeholder="Enter Number" required>
-            </div>
-
-            <textarea class="form-control" name="text" id="comment" rows="5" style="resize: none;"
-              placeholder="Enter Address" required></textarea>
-
-
-            <button type="submit" class=" mt-5 order-btn btn  fs-5 fw-bolder">Order Now</button>
-
-          </form>
-
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Order Section End -->
-
-
-
+  <div style="margin-top: 11%;"></div>
   <!--  Review Section Start -->
   <div class="container ">
     <div class="row">
@@ -453,31 +408,108 @@
           <img src="/img/review-img.png" alt="">
         </div>
       </div>
-
+      
       <div class="col-md-6 py-3 py-md-0 ms-5">
         <h3 class="text-capitalize text-danger fw-bold">What they Say</h3>
         <h2 class="text-capitalize"> what our customers <br> say about us</h2>
         <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum delectus similique cumque optio officia,
         </p>
-        <h5 class="d-md-inline d-sm-block fw-bold fs-4 me-lg-3"> <img class="img-fluid" width="15%" src="/img/pic-1.png" alt=""> john cooper</h5>
-        <h5  class="d-md-inline d-sm-block fw-bold mt-3 fw-bold fs-4"> <img class="img-fluid" width="15%" src="/img/pic-2.png" alt=""> john cooper</h5>
-        <div class="text-warning fs-6 mt-3">
-          <i class="fa-solid fa-star checked"></i>
-          <i class="fa-solid fa-star checked"></i>
-          <i class="fa-solid fa-star checked"></i>
-          <i class="fa-solid fa-star checked"></i>
-          <i class="fa-solid fa-star checked"></i>
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class=" fw-bold fs-4 me-lg-3">
+              <a class="text-decoration-none" href="/pages/reviews.html">
+                <img class="img-fluid" width="15%" src="/img/pic-1.png" alt="">
+              </a> 
+                 
+               john
+              cooper</h5>
+            <div class="text-warning fs-6 mt-3">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked text-secondary"></i>
+              <i class="fa-solid fa-star checked text-secondary"></i>
+            </div>
+
+            <h5 class=" fw-bold mt-3 fw-bold fs-4"> 
+              <a class="text-decoration-none"  href="/pages/reviews.html">
+              <img class="img-fluid" width="15%" src="/img/pic-2.png" alt="">
+            </a> 
+              john
+              cooper</h5>
+            <div class="text-warning fs-6 mt-3">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+
+          </div>
+          <div class="col-md">
+            <h5 class=" fw-bold fs-4 me-lg-3">
+              <a class="text-decoration-none" href="/pages/reviews.html">
+                <img class="img-fluid" width="15%" src="/img/pic-1.png" alt="">
+              </a> 
+                 
+               john
+              cooper</h5>
+            <div class="text-warning fs-6 mt-3">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked "></i>
+            </div>
+
+            <h5 class=" fw-bold mt-3 fw-bold fs-4">
+              <a class="text-decoration-none" href="/pages/reviews.html">
+                <img class="img-fluid" width="15%" src="/img/pic-2.png" alt="">
+              </a> 
+                 
+               john
+              cooper</h5>
+            <div class="text-warning fs-6 mt-3">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked text-secondary"></i>
+              <i class="fa-solid fa-star checked text-secondary"></i>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
   </div>
   <!--  Review Section End -->
 
-  <!-- Contact Section Start -->
+  <div style="margin-top: 16%;"></div>
 
-  
-  <!-- Contact Section End -->
+  <!-- Footer start -->
+  <footer class="">
+    <div class="container text-center ">
+      <div class="">
+        <img src="/img/logo.png" class="img-fluid w-25" alt="" style="cursor: pointer;">
+      </div>
+      <p class="fs-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, eius.</p>
+      <i class="btn btn-outline-danger border-0 fa-brands fa-twitter p-2 text-black fs-4"></i>
+      <i class="btn btn-outline-danger border-0 fa-brands fa-instagram p-2 text-black fs-4"></i>
+      <i class="btn btn-outline-danger border-0 fa-brands fa-facebook-f p-2 text-black fs-4"></i>
+      <i class="btn btn-outline-danger border-0 fa-brands fa-youtube p-2 text-black fs-4"></i>
+      <i class="btn btn-outline-danger border-0 fa-brands fa-pinterest-p p-2 text-black fs-4"></i>
+    </div>
+    <br>
+    <div class="text-center fs-4">
+      &copy; Copyright Hussein Gafrony. All Rights Reserved
+      <br>
+      <span class="fs-4"> Designed By <a class="text-danger text-decoration-none fw-bolder " href="#"> Hussein
+          Gafrony</a></span>
+    </div>
+  </footer>
 
+  <!-- Footer End -->
 
 
   <!-- Bootstrap Cdn link -->

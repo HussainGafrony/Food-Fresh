@@ -1,10 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    /* scroll-behavior: smooth; */
     font-family: "Josefin Slab", serif;
+}
+
+:root {
+    --mc: #dc3545;
+    --t-transition: 1s;
+    --m-bor: 5px;
 }
 
 html::-webkit-scrollbar-track {
@@ -12,129 +15,35 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #e53937;
-    border-radius: 10px;
+    background: var(--mc);
+    border-radius: var(--m-bor);
 }
 
 html::-webkit-scrollbar {
     width: 10px;
 }
 
+/* Gloabl */
+
+.text-transition {
+    transition: var(--t-transition);
+}
+
 /* Navbar Start */
-#navbar {
-    background: transparent;
-    padding: 0px 9% 0px;
+
+.nav-item .nav-link {
+    transition: var(--t-transition);
 }
 
-#logo img {
-    width: 190px;
-    margin-top: 3px;
-}
-
-.nav-item
-.nav-link {
-    transition: 1s;
-}
-
-.nav-item 
-.nav-link:hover {
-    color: red;
-}
-
-#navbar input {
-    border-radius: 50px;
-}
-
-#btn {
-    border-radius: 5px;
-    padding: 5px;
-    border: 1px solid red;
-    background: transparent;
-    transition: 0.5s;
-}
-
-#btn:hover {
-    background: red;
-    color: white;
+.nav-item .nav-link:hover {
+    color: var(--mc);
 }
 
 /* Navbar End */
 
-
-/*  Home Section Start */
-.home {
-    width: 100%;
-    height: 100vh;
-    padding: 5px 11% 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
-}
-
-
-.home
-.img {
-    flex: 1 1 300px;
-}
-
-.home
-.img
-img {
-    width: 100%;
-    margin-left: 60px;
-}
-
-.home-content {
-    flex: 1 1 400px;
-    margin-top: 30px;
-}
-
-.home-content h3 {
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.home-content h3 span {
-    color: red;
-}
-
-#home-btn {
-    padding: 10px;
-    text-decoration: none;
-    background: red;
-    color: white;
-    border-radius: 5px;
-}
-
-@media screen and (max-width:873px) {
-
-    .home
-    .img
-    img {
-        margin-left: 0px;
+/* space */
+@media screen and (max-width: 992px) {
+    .height {
+        margin-top: 16% !important;
     }
 }
-
-/*  Home Section End */
-
-
-/* Order Section Start */
-
-.order-btn{
-    cursor: pointer;
-    transition: 1s;
-    background: transparent;
-    color: #e53937;
-    border:  2px solid #e53937;
-    
-}
-.order-btn:hover {
-    background: #e53937;
-    color: white;
-    border: 2px solid white;
-}
-
-/* Order Section End */
