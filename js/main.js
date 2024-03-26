@@ -1,15 +1,14 @@
 $(document).ready(function () {
-    $("#send").click(function (event) {
-        event.preventDefault();
+    $("#send").click(function () {
         validateForm();
     });
 });
 
 function validateForm() {
-    const name = $('#name').val().trim();
-    const email = $('#email').val().trim();
-    const comment = $('#comment').val().trim();
-    // const number = $('#number').val().trim();
+    const name = $('#name').val();
+    const email = $('#email').val();
+    const comment = $('#comment').val();
+    const number = $('#number').val();
 
 
     if (isAnyFieldEmpty(name, email, comment)) {
@@ -27,11 +26,13 @@ function validateForm() {
         return;
     }
 
-    // if (number !== "" && !isValidNumber(number)) {
-    //     setAlertValue('Please enter a valid number.', 'danger');
-    //     return;
-    // }
+    if ($('#number').hasClass('services-number')) {
+        if (number === "") {
+            setAlertValue('Please enter a valid number.', 'danger');
+            return;
+        }
 
+    }
     setAlertValue('Thank you for contacting us .', 'success');
 
 
@@ -39,7 +40,7 @@ function validateForm() {
     $('#name').val('');
     $('#email').val('');
     $('#comment').val('');
-    // $('#number').val('');
+    $('#number').val('');
 
 
 }
@@ -68,10 +69,6 @@ function isTooShort(value, minLength) {
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
-}
-
-function isValidNumber(number) {
-    return !isNaN(number);
 }
 
 
