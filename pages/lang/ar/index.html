@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fresh Food</title>
+
+    <!-- Bootstrap Cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <!-- Bootstrap Cdn link -->
+
+
+    <!-- Font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font awesome cdn  -->
+
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,900;1,600&family=Josefin+Slab:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Google fonts link -->
+
+    <!-- Style Css link -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Style Css link -->
+
+    <!-- Style Css link Rtl -->
+    <link rel="stylesheet" href="/css/style-rtl.css">
+    <!-- Style Css link Rtl-->
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg p-0 mx-5 ">
+        <div class="container-fluid ">
+            <img src="/img/logo.png" class="img-fluid" alt="">
+
+            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbar">
+                <ul class="navbar-nav me-auto bg-light-subtle ">
+                    <li class="nav-item">
+                        <a href="/pages/lang/ar/index.html " class="nav-link fs-4 ">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/lang/en/menu.html" class="nav-link fs-4">قائمة الطلعام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/lang/en/services.html" class="nav-link fs-4">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/lang/en/reviews.html" class="nav-link fs-4">التقييم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/lang/en/about.html" class="nav-link fs-4">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/lang/en/contact.html" class="nav-link fs-4">اتصل بنا</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control ms-2 fs-5 text-transition" type="search"
+                        placeholder="ابحث عن وجبتك المفضلة" aria-label="Search">
+                    <button class="btn btn-outline-danger fs-5 text-transition" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <div class="btn-group mx-5 ms-2 mt-3 my-lg-0 ">
+                    <button type="button" class="btn btn-danger dropdown-toggle fs-5" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        اللغة
+                    </button>
+                    <ul class="dropdown-menu text-center">
+                        <li id="ar-btn" class="nav-item"><a class="dropdown-item fs-5 nav-link"
+                                href="/pages/lang/ar/index.html">
+                                العربية
+                                <img src="/img/ar.png " class="img-fluid w-25 ms-3" alt="">
+
+                            </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li id="en-btn" class="nav-item"><a class="dropdown-item fs-5 nav-link" href="/index.html">
+                                الانكليزية
+                                <img src="/img/en.png " class="img-fluid w-25 ms-2" alt="">
+
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <div style="margin-top: 8%;"></div>
+
+    <!-- Home Start -->
+    <div class="container text-transition">
+        <div class="row align-items-center ">
+            <div class="col-md-6 ">
+                <h3 class="fs-1 fw-bolder">احصل على أفضل عرض<br> على الوجبات<span class="text-danger"> السريعة</span> &
+                    <span class="text-danger">المطاعم</span>
+                </h3>
+                <p class="fs-4"> استمتع بتجربة مذاق فريدة وتمتع بأطباق شهية تأسر حواسك. اختر الآن واحصل على أفضل العروض
+                </p>
+
+                <a href="#our-menu" class="btn btn-outline-danger fs-5 fw-bolder">قائمة الوجبات</a>
+            </div>
+            <div class="col-md-6">
+                <img src="/img/image-46.png" class="img-fluid" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Home  End -->
+
+    <div style="margin-top: 11%;"></div>
+
+    <!-- Top Section Start -->
+    <div class="container text-center">
+        <h3 class="text-capitalize text-danger fw-bolder fs-2">ما نقدمه لكم</h3>
+        <h3 class="text-capitalize fw-bolder fs-1">طعامك المفضل <br> التوصيل المفضل </h3>
+
+        <div class="row align-items-center text-center mt-5 flex-row-reverse">
+
+            <div class="col-md-4 py-3">
+                <div class="card border-0">
+                    <img class="w-75 m-auto" src="/img/img1.png" alt="">
+                    <h1 class="text-capitalize mt-5"> سهولة الطلب</h1>
+                    <p class="fs-4">تحتاج فقط إلى خطوات قليلة <br>لطلب الطعام</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-3">
+                <div class="card border-0">
+                    <img class="w-75 m-auto" src="/img/img2.png" alt="">
+                    <h1 class="text-capitalize mt-5"> أسرع توصيل</h1>
+                    <p class="fs-4">توصيل دائمًا في الوقت المحدد <br>حتى بسرعة أكبر </p>
+                </div>
+            </div>
+            <div class="col-md-4 py-3">
+                <div class="card border-0">
+                    <img class="w-75 m-auto" src="/img/img3.png" alt="">
+                    <h1 class="text-capitalize mt-5"> أفضل جودة</h1>
+                    <p class="fs-4"> ليس فقط السرعة، بل الجودة أيضًا هي <br>الأهم بالنسبة لنا</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Top Section End -->
+    <div style="margin-top: 11%;"></div>
+
+
+    <!-- Our Menu Start -->
+
+    <div class="container text-center" id="our-menu">
+        <h3 class="text-danger fs-1">قائمة الطعام</h3>
+        <h2 class="fw-bolder">أطباق شهية متوفرة هنا <i class="text-danger fa-solid fa-arrow-down"></i></h2>
+        <!-- Section 1 -->
+
+        <div class="row mt-5 flex-row-reverse">
+            <div class="col-md py-3">
+                <div class="card  text-center">
+                    <img src="/img/Mangalorean_Chicken.png" alt="">
+                    <h3 class="text-danger mt-2"> دجاج المكسيك</h3>
+                    <div class="card-body py-0  text-start">
+                        <h4 >دجاج المكسيك هو طبق لذيذ متأثر بتقاليد المطبخ المكسيكي</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$20 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-3 ">
+                <div class="card  text-center">
+                    <img src="/img/Garlic_Fried.png" alt="">
+                    <h3 class="text-danger mt-2">جليسي المقلية بالثوم</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 > قطع الدجاج المقلية بالزيت والمشوحة بالثوم</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$35 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-3 ">
+                <div class="card  text-center">
+                    <img src="/img/Grilled_beef_steak.png" alt="">
+                    <h3 class="text-danger mt-2">ستيك مشوي</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 > يتميز بنكهة فريدة وغنية وقوام طري لا مثيل له</h4>
+                        <div class="text-warning fs-5 mt-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-3">
+                <div class="card  text-center">
+                    <img src="/img/Pineapple_Fried_Rice.png" alt="">
+                    <h3 class="text-danger mt-2">أرز مقلي</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 >يتميز بقوامه الخفيف ونكهته الفريدة التي تأتي من تحميص حبوب الأرز</h4>
+                        <div class="text-warning fs-5 mt-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$25 <i
+                                class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Section 2 -->
+        <div class="row mt-5 flex-row-reverse ">
+            <div class="col-md py-0  mb-5 mb-lg-0 ">
+                <div class="card  text-center ">
+                    <img src="/img/Grilled_pork_ribs.png" alt="">
+                    <h3 class="text-danger mt-2">لحم أضلع الخنزير</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 > شهيرًا بين عشاق اللحوم، حيث تقدم مزيجًا مرضيًا من اللحم اللذيذ </h4>
+                        <div class="text-warning fs-5 mt-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$200 <i
+                                class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-0  mb-5 mb-lg-0">
+                <div class="card  text-center">
+                    <img src="/img/crispy_fried.png" alt="">
+                    <h3 class="text-danger mt-2"> دجاج مقلي مقرمش</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 > حيث يقدم تجربة طعم فريدة ومشبعة وممتعة لعشاق الدجاج</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$15 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-0 mb-5 mb-lg-0">
+                <div class="card  text-center">
+                    <img src="/img/sushi__japanese.png" class="" alt="">
+                    <h3 class="text-danger mt-2">سوشي اليابانية</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 > قطع من الأرز المطبوخ مع السوشي رايس فينيجار</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-0 mb-5 mb-lg-0">
+                <div class="card text-center">
+                    <img src="/img/Lyulya_kebab.png" alt="">
+                    <h3 class="text-danger mt-2">اللحم المفروم</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 >يُعد وجبة شهية ومحببة في مناطق عدة من العالم</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$250 <i
+                                class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Our Menu End -->
+
+
+    <div style="margin-top: 5%;"></div>
+    <!-- Divider -->
+    <div class="container">
+        <div class="bg-danger" style="width: 100%;height: 2px;"> </div>
+    </div>
+    <!-- Divider -->
+    <div style="margin-top: 5%;"></div>
+
+    <!-- Our Menu Start -->
+
+    <div class="container my-5 text-center">
+        <h3 class="text-danger fs-2">قائمة الطعام لدينا</h3>
+        <!-- Section 1 -->
+        <div class="row mt-5 flex-row-reverse">
+            <div class="col-md py-3">
+                <div class="card  text-center">
+                    <img src="/img/burger.png" alt="">
+                    <h3 class="text-danger mt-2">برغر</h3>
+                    <div class="card-body pb-0 text-start">
+                        <h4 >وجبة شهية ومشبعة يفضلها الكثيرون</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked text-secondary"></i>
+                            <i class="fa-solid fa-star checked text-secondary"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$60 <i class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-3 ">
+                <div class="card  text-center">
+                    <img src="/img/fasr food.png" alt="">
+                    <h3 class="text-danger mt-2">كباب مشوي</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 >شهية ومحببة في معظم ثقافات العالم</h4>
+                        <div class="text-warning fs-5 mt-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked text-secondary"></i>
+                        </div>
+                        <p class="fs-4 mt-2"> $50 <i
+                                class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-3">
+                <div class="card  text-center">
+                    <img src="/img/rice.png" alt="">
+                    <h3 class="text-danger mt-2">أطباق الأرز</h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 >خياراً شهياً ومشبعاً في مختلف المطابخ العالمية</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$120 <i
+                                class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4"></i></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md py-3">
+                <div class="card  text-center">
+                    <img src="/img/pizza.png" alt="">
+                    <h3 class="text-danger mt-2">بيتزا </h3>
+                    <div class="card-body py-0 text-start">
+                        <h4 >لذيذة ومتوازنة بنكهة الجبن والصلصة المميزة</h4>
+                        <div class="text-warning fs-5 mt-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked text-secondary"></i>
+                        </div>
+                        <p class="fs-4 mt-2">$30 <i
+                                class="fa-solid fa-credit-card text-danger float-end mt-1 fs-4 "></i></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Our Menu End -->
+    <div style="margin-top: 11%;"></div>
+    <!--  Review Section Start -->
+    <div class="container ">
+        <div class="row flex-row-reverse justify-content-between ">
+            <div class="col-md-6 col-lg-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="/img/review-img.png" class="" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 py-3 py-md-0 mt-lg-2">
+                <h3 class="text-capitalize text-danger fw-bold">آراء الآخرين</h3>
+                <a class="text-decoration-none" href="/pages/reviews.html">
+
+                    <h2 class="text-capitalize text-dark "> آراء عملاؤنا حول <br> خدماتنا</h2>
+                </a>
+
+                <h5> تعبيرات رضا عملاؤنا عن خدماتنا تشكل شاهدًا قويًا على جودتها واعتماديتها، فلا شيء يغني عن تجاربهم
+                    الإيجابية
+                </h5>
+                <div class="row justify-content-between ">
+                    <div class="col-md-6 col-lg-6">
+                        <h5 class=" fw-bold fs-4 mt-2">
+                            <img class="img-fluid" width="25%" src="/img/pic-1.png" alt="">
+                            جون كابي
+                        </h5>
+                        <div class="text-warning fs-6">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked text-secondary"></i>
+                        </div>
+
+                        <h5 class=" fw-bold mt-2 fw-bold mt-2 fs-4">
+                                <img class="img-fluid" width="25%" src="/img/pic-2.png" alt="">
+                            جوليا راني
+                        </h5>
+                        <div class="text-warning fs-6 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-6 ">
+                        <h5 class=" fw-bold fs-4 mt-2">
+                            <img class="img-fluid" width="25%" src="/img/pic-1.png" alt="">
+                            رونيو كانور
+                        </h5>
+                        <div class="text-warning fs-6">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked "></i>
+                        </div>
+
+                        <h5 class=" fw-bold mt-2 fw-bold fs-4">
+                            <img class="img-fluid" width="25%" src="/img/pic-2.png" alt="">
+                            شيماء الاسد
+                        </h5>
+                        <div class="text-warning fs-6">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked text-secondary"></i>
+                            <i class="fa-solid fa-star checked text-secondary"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Review Section End -->
+
+    <div style="margin-top: 16%;"></div>
+
+    <!-- Footer start -->
+    <footer class="">
+        <div class="container text-center ">
+            <div class="">
+                <img src="/img/logo.png" class="img-fluid w-25" alt="" style="cursor: pointer;">
+            </div>
+            <p class="fs-3">استكشف عالمًا من النكهات الطازجة والمذاقات الرائعة معنا، حيث نقدم لك تشكيلة واسعة من
+                الأطعمة اللذيذة والمكونات الطازجة التي ستلبي تطلعاتك الغذائية</p>
+            <i class="btn btn-outline-danger border-0 fa-brands fa-twitter p-2 text-black fs-4"></i>
+            <i class="btn btn-outline-danger border-0 fa-brands fa-instagram p-2 text-black fs-4"></i>
+            <i class="btn btn-outline-danger border-0 fa-brands fa-facebook-f p-2 text-black fs-4"></i>
+            <i class="btn btn-outline-danger border-0 fa-brands fa-youtube p-2 text-black fs-4"></i>
+            <i class="btn btn-outline-danger border-0 fa-brands fa-pinterest-p p-2 text-black fs-4"></i>
+        </div>
+        <br>
+        <div class="text-center fs-4">
+            &copy; حقوق الطبع والنشر جميع الحقوق محفوظة
+            <br>
+            <span class="fs-4 "> مصمم بواسطة <a class="text-danger text-decoration-none fw-bolder " href="#"> Hussein
+                    Gafrony</a></span>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+
+    <!-- Bootstrap Cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Cdn link -->
+
+</body>
+
+</html>

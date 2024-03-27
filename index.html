@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -33,16 +33,16 @@
 <body>
 
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg fixed-top ">
-    <div class="container-fluid mx-lg-5 mx-sm-0">
-      <img src="/img/logo.png " class="img-fluid " alt="">
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img src="/img/logo.png " class="img-fluid" alt="">
+
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav me-auto bg-light">
+        <ul class="navbar-nav me-auto bg-light-subtle">
           <li class="nav-item ">
             <a href="/index.html" class="nav-link fs-4 ">Home</a>
           </li>
@@ -67,6 +67,23 @@
           <input class="form-control me-2 fs-5 text-transition" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-danger fs-5 text-transition" type="button">Search</button>
         </form>
+        <div class="btn-group me-5 ms-3 mt-3 my-lg-0">
+          <button type="button" class="btn btn-danger dropdown-toggle fs-5" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Language
+          </button>
+          <ul class="dropdown-menu text-center">
+            <li id="ar-btn" class="nav-item"><a class="dropdown-item fs-5 nav-link" href="/pages/lang/ar/index.html">
+              <img
+                  src="/img/ar.png " class="img-fluid w-25 me-4 " alt="">Arabic</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li id="en-btn" class="nav-item"><a class="dropdown-item fs-5 nav-link" href="/index.html"><img src="/img/en.png "
+                  class="img-fluid w-25 me-3 " alt="">English</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -143,7 +160,7 @@
     <!-- Section 1 -->
 
     <div class="row mt-5">
-      <div class="col-md-3 py-3">
+      <div class="col-md py-3">
         <div class="card  text-center">
           <img src="/img/Mangalorean_Chicken.png" alt="">
           <h3 class="text-danger mt-2">M Chicken</h3>
@@ -162,7 +179,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-3 ">
+      <div class="col-md py-3 ">
         <div class="card  text-center">
           <img src="/img/Garlic_Fried.png" alt="">
           <h3 class="text-danger mt-2">Garlic Fried</h3>
@@ -181,7 +198,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-3 ">
+      <div class="col-md py-3 ">
         <div class="card  text-center">
           <img src="/img/Grilled_beef_steak.png" alt="">
           <h3 class="text-danger mt-2">Grilled Steak</h3>
@@ -200,7 +217,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-3">
+      <div class="col-md py-3">
         <div class="card  text-center">
           <img src="/img/Pineapple_Fried_Rice.png" alt="">
           <h3 class="text-danger mt-2">Fried Rice</h3>
@@ -223,7 +240,7 @@
     </div>
     <!-- Section 2 -->
     <div class="row mt-5">
-      <div class="col-md-3 py-0">
+      <div class="col-md py-0 mb-5 mb-lg-0 ">
         <div class="card  text-center">
           <img src="/img/Grilled_pork_ribs.png" alt="">
           <h3 class="text-danger mt-2">Pork Ribs</h3>
@@ -242,7 +259,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-0">
+      <div class="col-md py-0 mb-5 mb-lg-0">
         <div class="card  text-center">
           <img src="/img/crispy_fried.png" alt="">
           <h3 class="text-danger mt-2"> Crispy Fried</h3>
@@ -261,7 +278,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-0">
+      <div class="col-md py-0 mb-5 mb-lg-0" >
         <div class="card  text-center">
           <img src="/img/sushi__japanese.png" class="" alt="">
           <h3 class="text-danger mt-2">Sushi Japanes</h3>
@@ -280,7 +297,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-0">
+      <div class="col-md py-0 mb-5 mb-lg-0">
         <div class="card text-center">
           <img src="/img/Lyulya_kebab.png" alt="">
           <h3 class="text-danger mt-2">Lyulya Kebab</h3>
@@ -319,7 +336,7 @@
     <h3 class="text-danger fs-2">Our Menu</h3>
     <!-- Section 1 -->
     <div class="row mt-5">
-      <div class="col-md-3 py-3">
+      <div class="col-md py-3">
         <div class="card  text-center">
           <img src="/img/burger.png" alt="">
           <h3 class="text-danger mt-2">Burger</h3>
@@ -338,7 +355,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-3 ">
+      <div class="col-md py-3 ">
         <div class="card  text-center">
           <img src="/img/fasr food.png" alt="">
           <h3 class="text-danger mt-2">Fast Food</h3>
@@ -357,7 +374,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-3">
+      <div class="col-md py-3">
         <div class="card  text-center">
           <img src="/img/rice.png" alt="">
           <h3 class="text-danger mt-2">Rice Dishe</h3>
@@ -376,7 +393,7 @@
 
         </div>
       </div>
-      <div class="col-md-3 py-3">
+      <div class="col-md py-3">
         <div class="card  text-center">
           <img src="/img/pizza.png" alt="">
           <h3 class="text-danger mt-2">Pizza </h3>
@@ -402,28 +419,28 @@
   <div style="margin-top: 11%;"></div>
   <!--  Review Section Start -->
   <div class="container ">
-    <div class="row">
-      <div class="col-md-4 py-3 py-md-0 me-5">
+    <div class="row justify-content-between" >
+      <div class="col-md-6 col-lg-4 py-3 py-md-0 ">
         <div class="card">
           <img src="/img/review-img.png" alt="">
         </div>
       </div>
-      
-      <div class="col-md-6 py-3 py-md-0 ms-5">
-        <h3 class="text-capitalize text-danger fw-bold">What they Say</h3>
-        <h2 class="text-capitalize"> what our customers <br> say about us</h2>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum delectus similique cumque optio officia,
-        </p>
-        <div class="row">
-          <div class="col-md-6">
-            <h5 class=" fw-bold fs-4 me-lg-3">
-              <a class="text-decoration-none" href="/pages/reviews.html">
-                <img class="img-fluid" width="15%" src="/img/pic-1.png" alt="">
-              </a> 
-                 
-               john
-              cooper</h5>
-            <div class="text-warning fs-6 mt-3">
+
+      <div class="col-md-6 col-lg-6 py-3 py-md-0 mt-lg-2 ">
+        <h3 class="text-capitalize text-danger fw-bold ">What they Say</h3>
+        <a class="text-decoration-none " href="/pages/reviews.html"></a>
+        <h2 class="text-capitalize text-black"> what our customers <br> say about us</h2>
+      </a>
+        <h5 > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum delectus similique cumque optio officia,
+        </h5>
+        <div class="row justify-content-between">
+          <div class="col-md-6 col-lg-6">
+            <h5 class=" fw-bold fs-4 mt-2">
+                <img class="img-fluid" width="25%" src="/img/pic-1.png" alt="">
+              john
+              cooper
+            </h5>
+            <div class="text-warning fs-6">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -431,13 +448,12 @@
               <i class="fa-solid fa-star checked text-secondary"></i>
             </div>
 
-            <h5 class=" fw-bold mt-3 fw-bold fs-4"> 
-              <a class="text-decoration-none"  href="/pages/reviews.html">
-              <img class="img-fluid" width="15%" src="/img/pic-2.png" alt="">
-            </a> 
+            <h5 class=" fw-bold mt-2 fw-bold fs-4">
+                <img class="img-fluid" width="25%" src="/img/pic-2.png" alt="">
               john
-              cooper</h5>
-            <div class="text-warning fs-6 mt-3">
+              cooper
+            </h5>
+            <div class="text-warning fs-6 ">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -446,15 +462,14 @@
             </div>
 
           </div>
-          <div class="col-md">
-            <h5 class=" fw-bold fs-4 me-lg-3">
-              <a class="text-decoration-none" href="/pages/reviews.html">
-                <img class="img-fluid" width="15%" src="/img/pic-1.png" alt="">
-              </a> 
-                 
-               john
-              cooper</h5>
-            <div class="text-warning fs-6 mt-3">
+          <div class="col-md-6 col-lg-6 ">
+            <h5 class=" fw-bold mt-2 fs-4">
+                <img class="img-fluid" width="25%" src="/img/pic-1.png" alt="">
+
+              john
+              cooper
+            </h5>
+            <div class="text-warning fs-6 ">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
@@ -462,14 +477,13 @@
               <i class="fa-solid fa-star checked "></i>
             </div>
 
-            <h5 class=" fw-bold mt-3 fw-bold fs-4">
-              <a class="text-decoration-none" href="/pages/reviews.html">
-                <img class="img-fluid" width="15%" src="/img/pic-2.png" alt="">
-              </a> 
-                 
-               john
-              cooper</h5>
-            <div class="text-warning fs-6 mt-3">
+            <h5 class=" fw-bold mt-2 fw-bold fs-4">
+                <img class="img-fluid" width="25%" src="/img/pic-2.png" alt="">
+
+              john
+              cooper
+            </h5>
+            <div class="text-warning fs-6 ">
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>
               <i class="fa-solid fa-star checked"></i>

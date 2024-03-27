@@ -33,6 +33,7 @@ html::-webkit-scrollbar {
 
 .nav-item .nav-link {
     transition: var(--t-transition);
+    color: black;
 }
 
 .nav-item .nav-link:hover {

@@ -33,7 +33,9 @@ function validateForm() {
         }
 
     }
-    setAlertValue('Thank you for contacting us .', 'success');
+    checkTotal() ? setAlertValue('Thank you for reaching out to us. We appreciate your message', 'success')
+        : setAlertValue("it seems you've chosen an incorrect answer ,give it another try, and you'll surely get the right answer!", 'danger');
+    // setAlertValue('Thank you for contacting us .', 'success');
 
 
     // Clear form fields
@@ -70,6 +72,36 @@ function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+
+function checkTotal() {
+    const num1 = Math.floor(Math.random() * 100);
+
+    const num2 = Math.floor(Math.random() * 100);
+
+    const correctTotal = num1 + num2;
+    const userInput = parseInt(prompt("Enter the total of " + num1 + " and " + num2));
+    if (userInput === correctTotal) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+function toggleRTL() {
+    function toggleRTL() {
+        $('html').attr('dir', $('html').attr('dir') === 'rtl' ? 'ltr' : 'rtl');
+        $('link[rel=stylesheet]').last().attr('href', function(i, href) {
+            return href.replace('bootstrap.rtl', 'bootstrap').replace('bootstrap', 'bootstrap.rtl');
+        });
+    }
+
+    $('#ar-btn').click(toggleRTL);
+    $('#en-btn').click(toggleRTL);
+
+}
+
 
 
 
