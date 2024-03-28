@@ -64,7 +64,7 @@ const language = () => {
 const setAlertValue = (message, type) => {
     const alertPlaceholder = $('#alert');
     const wrapper = $(
-        `<div class="alert alert-${type} alert-dismissible" role="alert">` +
+        `<div class="alert alert-${type} alert-dismissible z-2 position-absolute py-3" role="alert">` +
         `   <div class='h4'>${message}</div>` +
         '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
         '</div>'
