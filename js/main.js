@@ -12,30 +12,35 @@ function validateForm() {
 
 
     if (isAnyFieldEmpty(name, email, comment)) {
-        setAlertValue('Please fill in all fields', 'danger');
+        language() == 'en' ? setAlertValue('Please fill in all fields', 'danger')
+            : setAlertValue('يرجى ملء جميع الحقول', 'danger');
         return;
     }
 
     if (isTooShort(name, 5) || isTooShort(comment, 5)) {
-        setAlertValue('Name and Comment must be at least five characters long', 'warning');
+        language() == 'en' ? setAlertValue('Name and Comment must be at least five characters long', 'warning')
+            : setAlertValue('الاسم والتعليق يجب أن يكونا على الأقل خمسة أحرف.', 'warning');
         return;
     }
 
     if (!isValidEmail(email)) {
-        setAlertValue('Please enter a valid email address.', 'danger');
+        language() == 'en' ? setAlertValue('Please enter a valid email address.', 'danger') :
+            setAlertValue('يرجى إدخال عنوان بريد إلكتروني صالح.', 'danger');
         return;
     }
 
     if ($('#number').hasClass('services-number')) {
         if (number === "") {
-            setAlertValue('Please enter a valid number.', 'danger');
+            language() == 'en' ? setAlertValue('Please enter the number of meals.', 'danger') :
+                setAlertValue('يرجى إدخال عدد الوجبات.', 'danger');
             return;
         }
 
     }
-    checkTotal() ? setAlertValue('Thank you for reaching out to us. We appreciate your message', 'success')
-        : setAlertValue("it seems you've chosen an incorrect answer ,give it another try, and you'll surely get the right answer!", 'danger');
-    // setAlertValue('Thank you for contacting us .', 'success');
+    checkTotal() ? language() == 'en' ? setAlertValue('Thank you for reaching out to us. We appreciate your message', 'success') :
+        setAlertValue('شكرًا لتواصلكم معنا. نقدر رسالتكم.', 'success')
+        : language() == 'en' ? setAlertValue("it seems you've chosen an incorrect answer ,give it another try, and you'll surely get the right answer!", 'danger')
+            : setAlertValue("يبدو أنك قمت باختيار إجابة غير صحيحة، جرب مرة أخرى وستحصل بالتأكيد على الإجابة الصحيحة!", 'danger');
 
 
     // Clear form fields
@@ -45,6 +50,14 @@ function validateForm() {
     $('#number').val('');
 
 
+}
+
+
+const language = () => {
+    const lang = $('html')[0].lang;
+
+
+    return lang;
 }
 
 
@@ -92,7 +105,7 @@ function checkTotal() {
 function toggleRTL() {
     function toggleRTL() {
         $('html').attr('dir', $('html').attr('dir') === 'rtl' ? 'ltr' : 'rtl');
-        $('link[rel=stylesheet]').last().attr('href', function(i, href) {
+        $('link[rel=stylesheet]').last().attr('href', function (i, href) {
             return href.replace('bootstrap.rtl', 'bootstrap').replace('bootstrap', 'bootstrap.rtl');
         });
     }
@@ -102,13 +115,11 @@ function toggleRTL() {
 
 }
 
-
-
-
-
-// loading
+// loading Map
 
 setTimeout(() => {
     $(".loading").hide(1000, 'swing');
 
 }, 2500);
+
+
