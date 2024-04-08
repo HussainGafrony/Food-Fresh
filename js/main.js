@@ -68,7 +68,9 @@ function validateForm() {
   $("#comment").val("");
   $("#number").val("");
 }
-
+const language = () => {
+  return $("html").attr("lang");
+};
 const setAlertValue = (message, type) => {
   const alertPlaceholder = $("#alert");
   const wrapper = $(
